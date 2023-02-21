@@ -1,5 +1,5 @@
 import unittest
-from utils.utils import Node, Stack
+from utils.utils import *
 
 class TestNode(unittest.TestCase):
      def test_node(self):
