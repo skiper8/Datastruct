@@ -16,4 +16,3 @@ data = stack.pop()
 print(stack.top.data)
 
 print(data)
-
