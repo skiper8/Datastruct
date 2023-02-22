@@ -14,5 +14,4 @@ stack.push('data1', None)
 stack.push('data2', None)
 data = stack.pop()
 print(stack.top.data)
-
 print(data)
