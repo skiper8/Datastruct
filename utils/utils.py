@@ -1,8 +1,8 @@
 class Node:
 
     def __init__(self, data, next_node):
-        self.data = data  # тут данные
-        self.next_node = next_node  # тут ссылка на следующий
+        self.data = data
+        self.next_node = next_node
 
 
 class Stack:
