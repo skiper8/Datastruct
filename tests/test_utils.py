@@ -16,13 +16,13 @@ class TestNode(unittest.TestCase):
 
 
 class TestStack(unittest.TestCase):
-    def __init__(self, methodName: str = ...):
-        super().__init__(methodName)
-        self.stack = None
-
     def test_stack_push(self):
         stack = Stack()
         stack.push('data_2', None)
         stack.push('data_1', None)
         self.assertEqual(stack.top.data, 'data_1')
         self.assertEqual(stack.top.next_node.data, 'data_2')
+
+    def test_stack_pop(self):
+        stack = Stack()
+        self.assertEqual(stack.pop(), "data_1")
