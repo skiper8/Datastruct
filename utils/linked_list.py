@@ -48,15 +48,15 @@ class LinkedList:
             node = node.next_node
         return lst
 
-    def get_data_by_id(self, id):
-        try:
-            node = self.head
-            while node:
-                if node.data['id'] == id:
+    def get_data_by_id(self, _id):
+        node = self.head
+        while node:
+            if isinstance(node.data, dict) and 'id' in node.data:
+                if node.data['id'] == _id:
                     return node.data
-                node = node.next_node
-        except TypeError:
-            print("Данные не являются словарем или в словаре нет id.")
+            else:
+                print("Данные не являются словарем или в словаре нет id.")
+            node = node.next_node
 
 
 ll = LinkedList()
